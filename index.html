@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammed Asif | QA Automation Engineer (SDET)</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%230b1020%27/%3E%3Ctext x=%2750%27 y=%2766%27 font-size=%2750%27 font-family=%27sans-serif%27 font-weight=%27800%27 fill=%27%234ade80%27 text-anchor=%27middle%27%3EMA%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Mohammed Asif | QA Automation Engineer (SDET)">
+<meta property="og:description" content="QA Automation Engineer (SDET) with 5+ years in Playwright, Selenium, API and visual test automation for banking and SaaS. 50+ applications delivered to production.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mohammed456789.github.io/qa-automation-portfolio/">
+<meta property="og:image" content="https://mohammed456789.github.io/qa-automation-portfolio/og-image-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mohammed456789.github.io/qa-automation-portfolio/og-image-v2.png">
+<meta name="description" content="Portfolio of Mohammed Asif, QA Automation Engineer / SDET with 5+ years in Playwright, Selenium, API and visual test automation for banking and SaaS.">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#111832; --card:#151d3b; --line:#26305a;
+  --text:#e8ecf8; --muted:#9aa6cf; --accent:#4ade80; --accent2:#60a5fa; --warn:#fbbf24;
+  --radius:16px;
+}
+:root[data-theme="light"]{
+  --bg:#f6f8ff; --bg2:#ffffff; --card:#ffffff; --line:#dbe2f5;
+  --text:#0f172a; --muted:#51608a; --accent:#15803d; --accent2:#1d4ed8; --warn:#b45309;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;letter-spacing:.5px;color:var(--text)}
+.logo span{color:var(--accent)}
+nav ul{display:flex;gap:18px;list-style:none;font-size:14px;flex-wrap:wrap}
+nav ul a{color:var(--muted)}
+nav ul a:hover{color:var(--text);text-decoration:none}
+#theme{background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:6px 10px;cursor:pointer;font-size:14px}
+section{padding:72px 0}
+h2{font-size:28px;margin-bottom:6px}
+.sub{color:var(--muted);margin-bottom:32px}
+h2::before{content:"// ";color:var(--accent);font-family:ui-monospace,Consolas,monospace}
+
+/* hero */
+.hero{padding:80px 0 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-block;border:1px solid var(--line);background:var(--bg2);padding:5px 12px;border-radius:99px;font-size:13px;color:var(--muted)}
+.pill i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 25%,transparent)}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.1;margin:18px 0 12px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:18px;max-width:520px}
+.cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:12px;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--bg2);display:inline-block}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:#04210f;border-color:var(--accent)}
+.term{background:#070b17;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-family:ui-monospace,Consolas,monospace;font-size:13px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.term .bar{display:flex;gap:6px;padding:10px 14px;background:#0e1530;border-bottom:1px solid var(--line)}
+.term .bar b{width:10px;height:10px;border-radius:50%;background:#ef4444}
+.term .bar b:nth-child(2){background:#fbbf24}.term .bar b:nth-child(3){background:#4ade80}
+.term pre{padding:16px;color:#cbd5f5;min-height:250px;white-space:pre-wrap}
+.ok{color:#4ade80}.dim{color:#7b88b8}.blue{color:#60a5fa}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center}
+.stat strong{display:block;font-size:34px;color:var(--accent)}
+.stat span{color:var(--muted);font-size:14px}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{margin-bottom:8px;font-size:19px}
+.card p{color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tags span{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--bg2);border:1px solid var(--line);color:var(--muted)}
+.feature{grid-column:1/-1;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.feature ul{margin:12px 0 0 18px;color:var(--muted);font-size:15px}
+.feature li{margin-bottom:4px}
+.ico{width:46px;height:46px;display:block;margin-bottom:12px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center}
+.step .ico{margin:0 auto 10px}
+.step b{display:block;margin-bottom:4px}
+.step span{color:var(--muted);font-size:13px}
+@media(max-width:820px){.flow{grid-template-columns:repeat(2,1fr)}}
+.medal{font-size:30px;margin-bottom:8px}
+
+/* timeline */
+.tl{border-left:2px solid var(--line);margin-left:8px}
+.job{position:relative;padding:0 0 34px 28px}
+.job::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.job h3{font-size:18px}
+.job .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.job ul{margin-left:18px;color:var(--muted);font-size:15px}
+.job li{margin-bottom:4px}
+
+/* skills */
+.skill{margin-bottom:18px}
+.skill h4{font-size:14px;color:var(--accent2);margin-bottom:8px;font-family:ui-monospace,Consolas,monospace}
+
+/* bug reports */
+.bug{border:1px dashed var(--line);border-radius:var(--radius);padding:24px;background:var(--bg2)}
+.sev{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:color-mix(in srgb,var(--warn) 20%,transparent);color:var(--warn);margin-bottom:8px}
+
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);text-align:center;font-size:14px}
+.contact{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+
+.reveal{opacity:0;transform:translateY(18px);transition:.6s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:48px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .feature{grid-template-columns:1fr}
+  nav ul{display:none}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">MA<span>.</span>qa</a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#building">Building</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme" aria-label="Toggle light and dark theme">Theme</button>
+  </div>
+</nav>
+
+<header id="top" class="wrap hero">
+  <div>
+    <span class="pill"><i></i>Available immediately · Chennai, India</span>
+    <h1>I break software<br>so users <em>never do.</em></h1>
+    <p class="lead">Mohammed Asif, QA Automation Engineer (SDET) with 5+ years testing banking and SaaS platforms with Playwright, Selenium, API and visual automation, plus Generative AI, agentic AI and AI-assisted engineering.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my work</a>
+      <a class="btn" href="Mohammed_Asif_Resume.pdf" download>Download resume</a>
+      <a class="btn" href="https://github.com/mohammed456789/Playwright" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="term" aria-hidden="true">
+    <div class="bar"><b></b><b></b><b></b></div>
+    <pre id="term"></pre>
+  </div>
+</header>
+
+<section style="padding-top:0">
+  <div class="wrap stats">
+    <div class="stat reveal"><strong data-n="5" data-s="+">0</strong><span>Years in test automation</span></div>
+    <div class="stat reveal"><strong data-n="50" data-s="%">0</strong><span>Faster test execution</span></div>
+    <div class="stat reveal"><strong data-n="50" data-s="+">0</strong><span>Applications delivered to production</span></div>
+    <div class="stat reveal"><strong data-n="2" data-s="">0</strong><span>Company awards</span></div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <h2>How I Test</h2>
+    <p class="sub">From requirement to release, every change is checked.</p>
+    <div class="flow">
+      <div class="step reveal"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h20l6 6v30H12z"/><path d="M32 6v8h8M18 22h14M18 29h14M18 36h8"/></svg><b>1. Plan</b><span>User stories, acceptance criteria, risks and test data</span></div>
+      <div class="step reveal"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="m16 14-9 10 9 10M32 14l9 10-9 10M27 10l-6 28"/></svg><b>2. Automate</b><span>UI, API and database checks with Playwright, Selenium and SQL</span></div>
+      <div class="step reveal"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="6"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4"/></svg><b>3. Run in CI</b><span>Jenkins and GitHub Actions on every build, green gate before merge</span></div>
+      <div class="step reveal"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40V8M8 40h32"/><path d="M14 32l8-9 6 5 10-14"/></svg><b>4. Report</b><span>Clear defects and results that managers can act on</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Frameworks and work I built, not just tools I list.</p>
+    <div class="grid">
+      <article class="card feature reveal">
+        <div>
+          <h3>Playwright Automation Framework (TypeScript)</h3>
+          <p>A full test framework covering UI, API, cross-browser and mobile-device testing, run automatically on every push.</p>
+          <ul>
+            <li>Page Object Model with custom fixtures</li>
+            <li>UI and API tests in one suite, tag-based runs (<code>@web</code>, <code>@API</code>)</li>
+            <li>Cucumber BDD scenarios</li>
+            <li>Chromium, Firefox, WebKit and mobile emulation</li>
+            <li>Applitools visual comparison and Playwright MCP</li>
+            <li>GitHub Actions CI workflow</li>
+          </ul>
+          <div class="cta"><a class="btn primary" href="https://github.com/mohammed456789/Playwright" target="_blank" rel="noopener">View on GitHub</a></div>
+        </div>
+        <div class="term"><div class="bar"><b></b><b></b><b></b></div>
+<pre><span class="dim">tests/</span>
+ ├─ <span class="blue">pages/</span>      <span class="dim"># Page Objects</span>
+ ├─ <span class="blue">fixtures/</span>   <span class="dim"># custom fixtures</span>
+ ├─ <span class="blue">web/</span>        <span class="dim"># @web UI tests</span>
+ ├─ <span class="blue">api/</span>        <span class="dim"># @API tests</span>
+ ├─ <span class="blue">features/</span>   <span class="dim"># Cucumber BDD</span>
+ └─ <span class="blue">visual/</span>     <span class="dim"># Applitools</span>
+<span class="dim">.github/workflows/</span> <span class="ok">ci.yml</span></pre></div>
+      </article>
+
+      <article class="card reveal">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 18 24 7l18 11z"/><path d="M10 20v16M19 20v16M29 20v16M38 20v16M6 40h36M8 36h32"/></svg><h3>Temenos: First Cloud-Onboarded Playwright Framework</h3>
+        <p>Built from scratch for the T24 core banking suite. Automated Loan Origination, Account Origination, Collections, Recovery and Transactions with reusable modules, cutting execution time by about 50%.</p>
+        <div class="tags"><span>Playwright</span><span>TypeScript</span><span>Banking</span><span>Cloud</span></div>
+      </article>
+
+      <article class="card reveal">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v22H22l-8 7v-7H8z"/><path d="M24 15v10M19 20h10" /><circle cx="35" cy="14" r="0.5"/></svg><h3>Freshworks: Falcon Framework and Freddy AI Copilot</h3>
+        <p>Worked on testing the Generative AI and agentic AI features of Freshworks' Freddy AI Copilot application. Automated UI and API tests in Ruby/Selenium and Playwright (TypeScript), including end-to-end coverage of the Copilot module, with a green-build gate in Jenkins before merge.</p>
+        <div class="tags"><span>Ruby</span><span>Playwright</span><span>Jenkins</span><span>JMeter</span></div>
+      </article>
+
+      <article class="card reveal">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 36a8 8 0 0 1-1-16 11 11 0 0 1 21-2 9 9 0 0 1 1 18"/><path d="M24 40V24m-6 6 6-6 6 6"/></svg><h3>Wells Fargo: BDD Framework</h3>
+        <p>Cucumber, Selenium and Java framework with Gherkin features for cloud app modernization, plus a UiPath RPA prototype. Delivered 6+ applications with zero UAT defects.</p>
+        <div class="tags"><span>Cucumber</span><span>Selenium</span><span>Java</span><span>UiPath</span></div>
+      </article>
+      <article class="card reveal">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l3.5 9.5L37 19l-9.5 3.5L24 32l-3.5-9.5L11 19l9.5-3.5z"/><path d="M36 30l1.5 4 4 1.5-4 1.5L36 41l-1.5-4-4-1.5 4-1.5z"/></svg><h3>Generative AI, Agentic AI and AI-Assisted Engineering</h3>
+        <p>Testing the Generative AI and agentic AI features of Freshworks' Freddy AI Copilot. Day to day, I use GitHub Copilot, Claude, ChatGPT and Cursor with prompt engineering to draft and review test cases and scripts, and Playwright MCP in my framework, while checking by hand what each generated test really verifies.</p>
+        <div class="tags"><span>Generative AI</span><span>Agentic AI</span><span>Prompt engineering</span><span>Playwright MCP</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="building">
+  <div class="wrap">
+    <h2>Now Building</h2>
+    <p class="sub">What I'm working on right now.</p>
+    <div class="grid">
+      <article class="card reveal">
+        <span class="pill">In progress</span>
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 8 11v11c0 10 7 17 16 21 9-4 16-11 16-21V11z"/><path d="m16 24 6 6 11-12"/></svg><h3 style="margin-top:12px">ServiceNow Test Automation (ATF)</h3>
+        <p>A personal project on a ServiceNow developer instance: security-incident style workflows tested with the Automated Test Framework, plus REST API checks. I'll publish the suite and a write-up here when it's ready.</p>
+        <div class="tags"><span>ServiceNow</span><span>ATF</span><span>REST</span><span>Postman</span></div>
+      </article>
+      <article class="card reveal">
+        <span class="pill">In progress</span>
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="m16 14-9 10 9 10M32 14l9 10-9 10M27 10l-6 28"/></svg><h3 style="margin-top:12px">Cypress and Python Test Suites</h3>
+        <p>Extending my Playwright framework ideas to Cypress (UI) and Python (API and data checks), so the same scenarios are covered across tools.</p>
+        <div class="tags"><span>Cypress</span><span>Python</span><span>API</span><span>SQL</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2>Achievements</h2>
+    <p class="sub">Recognition and certifications.</p>
+    <div class="grid">
+      <div class="card reveal"><div class="medal">🏆</div><h3>T-Star Award</h3><p>Temenos, for the Playwright automation framework.</p></div>
+      <div class="card reveal"><div class="medal">⭐</div><h3>Rising Star Award</h3><p>Temenos, for TestComplete desktop automation.</p></div>
+      <div class="card reveal"><div class="medal">✅</div><h3>50+ Applications Delivered</h3><p>Delivered 50+ applications to production overall, including 6+ at Capgemini with zero UAT defects.</p></div>
+    </div>
+    <div class="tags" style="margin-top:26px">
+      <span>CP-SAT Selenium Automation Tester</span>
+      <span>LambdaTest Selenium Tester (2 levels)</span>
+      <span>HackerRank Java Developer</span>
+      <span>HackerRank Software Engineer</span>
+      <span>Claude 101 and Claude Code in Action (Anthropic)</span>
+      <span>TestMu AI Playwright 102</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="sub">Banking, enterprise and SaaS.</p>
+    <div class="tl">
+      <div class="job reveal">
+        <h3>Automation Test Engineer (SDET), Wissen Technology</h3>
+        <div class="meta">Client: Freshworks (Freshdesk, Freshservice, Freddy AI Copilot) · Jul 2025 – Nov 2026 · Chennai, India</div>
+        <ul>
+          <li>Worked on Generative AI and agentic AI testing for the Freddy AI Copilot application, with end-to-end UI and API coverage of the Copilot module.</li>
+          <li>Automated Web/UI and API tests with Ruby/Selenium and Playwright (TypeScript) on the Falcon Automation Framework.</li>
+          <li>Wrote and validated REST API tests covering request/response structure, status codes and error handling across integration layers.</li>
+          <li>Ran JMeter performance and load tests to validate API and feature behavior under load.</li>
+          <li>Triaged regression failures in Jenkins pipelines with developers and enforced a green-build quality gate before merge to master.</li>
+          <li>Analyzed user stories and epics to define acceptance criteria; converted validated bug fixes into automated regression scripts.</li>
+          <li>Used AI-assisted testing day to day (GitHub Copilot, Claude, ChatGPT, Cursor) with prompt engineering to generate and review test cases and scripts.</li>
+        </ul>
+      </div>
+      <div class="job reveal">
+        <h3>Automation Test Engineer, Temenos</h3>
+        <div class="meta">Life Cycle Management Suite, Commerce Banking T24 CMB · Mar 2024 – Jul 2025 · Chennai, India</div>
+        <ul>
+          <li>Built the first cloud-onboarded Playwright (JS/TS) framework at Temenos from scratch; led onboarding and stakeholder walkthroughs.</li>
+          <li>Automated Loan Origination, Account Origination, Collections, Recovery and Transactions flows, cutting test execution time by ~50% with modular, reusable components.</li>
+          <li>Owned test strategy, planning, test data management and defect reporting for banking modules.</li>
+          <li>Wrote SQL queries to validate database integrity, data consistency and transaction accuracy in the T24 database.</li>
+          <li>Validated integrations between T24 and third-party systems for reliable data flow and error-free transactions.</li>
+          <li>Performed functional, UI, integration and performance testing across customer, account, transaction and reporting modules.</li>
+          <li>Maintained TSSAF and TestComplete scripts for end-to-end testing.</li>
+        </ul>
+      </div>
+      <div class="job reveal">
+        <h3>Test Engineer, Capgemini Technology Services</h3>
+        <div class="meta">Client: Wells Fargo (Cloud App Modernization) · Aug 2021 – Mar 2024 · Chennai, India</div>
+        <ul>
+          <li>Built a BDD framework with Cucumber, Selenium and Java (Gherkin features); ran manual and automated functional and regression testing.</li>
+          <li>Worked with the onsite product team to onboard a newly created, flexible Selenium (Java) framework with a CI/CD pipeline for the cloud migration project.</li>
+          <li>Delivered 6+ applications to production with zero UAT defects.</li>
+          <li>Analyzed requirements and dependencies for migrating applications to the cloud.</li>
+          <li>Single point of contact during incidents and outages; published daily health and incident reports to stakeholders and management.</li>
+          <li>Mentored junior engineers and delivered a UiPath RPA prototype for the team.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">The toolkit.</p>
+    <div class="skill reveal"><h4>test_automation</h4><div class="tags"><span>Playwright (JS/TS)</span><span>Selenium WebDriver</span><span>Cypress</span><span>Cucumber BDD</span><span>TestNG</span><span>JUnit</span><span>RSpec</span><span>TestComplete</span><span>Page Object Model</span><span>Data-driven testing</span><span>Cross-browser</span><span>Mobile emulation</span><span>Applitools</span></div></div>
+    <div class="skill reveal"><h4>api_and_performance</h4><div class="tags"><span>Rest Assured</span><span>Postman</span><span>SoapUI</span><span>Playwright API</span><span>REST validation</span><span>Integration testing</span><span>JMeter</span></div></div>
+    <div class="skill reveal"><h4>database</h4><div class="tags"><span>SQL</span><span>Oracle SQL</span><span>MySQL</span><span>Joins and aggregations</span><span>Data integrity validation</span></div></div>
+    <div class="skill reveal"><h4>ci_cd_cloud_tools</h4><div class="tags"><span>Jenkins</span><span>GitHub Actions</span><span>Maven</span><span>Gradle</span><span>Git</span><span>Bitbucket</span><span>JIRA</span><span>ServiceNow</span><span>Azure</span><span>AWS</span><span>GCP</span><span>Pivotal Cloud Foundry</span></div></div>
+    <div class="skill reveal"><h4>languages</h4><div class="tags"><span>Java 8</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Ruby</span><span>SQL</span><span>HTML</span><span>CSS</span></div></div>
+    <div class="skill reveal"><h4>qa_process</h4><div class="tags"><span>Test strategy</span><span>Test planning</span><span>Test data management</span><span>Defect triage</span><span>QA metrics</span><span>Regression suites</span><span>Agile / Scrum</span><span>Mentoring</span></div></div>
+    <div class="skill reveal"><h4>ai_assisted</h4><div class="tags"><span>Generative AI testing</span><span>Agentic AI testing</span><span>AI-assisted engineering</span><span>GitHub Copilot</span><span>Claude</span><span>ChatGPT</span><span>Cursor</span><span>Playwright MCP</span><span>Prompt engineering</span></div></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2 style="font-size:24px">Let's work together</h2>
+    <p>Based in Chennai, Tamil Nadu, India · Notice period: immediate</p>
+    <p>Mobile: <a href="tel:+918754349697">+91 87543 49697</a></p>
+    <div class="contact">
+      <a class="btn primary" href="mailto:mohammed.w.asif732@gmail.com">Email me</a>
+      <a class="btn" href="tel:+918754349697">Call me</a>
+      <a class="btn" href="https://www.linkedin.com/in/mohamed-asif-090532211" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/mohammed456789/Playwright" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="Mohammed_Asif_Resume.pdf" download>Resume (PDF)</a>
+    </div>
+    <p style="margin-top:26px;font-size:13px">© 2026 Mohammed Asif</p>
+  </div>
+</footer>
+
+<script>
+// theme
+var root=document.documentElement;
+try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t)}catch(e){}
+document.getElementById('theme').onclick=function(){
+  var n=root.getAttribute('data-theme')==='light'?'dark':'light';
+  root.setAttribute('data-theme',n);
+  try{localStorage.setItem('theme',n)}catch(e){}
+};
+
+// terminal typing
+var lines=[
+ '<span class="dim">$</span> npx playwright test --project=all',
+ '',
+ '<span class="blue">Running tests across browsers</span>',
+ '  <span class="ok">✓</span> login.spec.ts <span class="dim">› valid user</span>',
+ '  <span class="ok">✓</span> loan.spec.ts <span class="dim">› origination flow</span>',
+ '  <span class="ok">✓</span> api/accounts.spec.ts <span class="dim">› 200 OK</span>',
+ '  <span class="ok">✓</span> mobile/iphone.spec.ts <span class="dim">› layout</span>',
+ '  <span class="ok">✓</span> visual/home.spec.ts <span class="dim">› no diff</span>',
+ '',
+ '<span class="ok">all tests passed</span>'
+];
+var el=document.getElementById('term'),i=0;
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function step(){ if(i<lines.length){el.innerHTML+=lines[i++]+'\n';setTimeout(step,reduce?0:380)} }
+step();
+
+// reveal + counters
+function count(e){
+  var n=+e.dataset.n,s=e.dataset.s||'',c=0,inc=Math.max(1,Math.ceil(n/30));
+  var id=setInterval(function(){c=Math.min(n,c+inc);e.textContent=c+s;if(c>=n)clearInterval(id)},35);
+}
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(x){
+    if(x.isIntersecting){
+      x.target.classList.add('in');
+      var s=x.target.querySelector('strong[data-n]'); if(s&&!s.done){s.done=1;count(s)}
+      io.unobserve(x.target);
+    }
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(e){io.observe(e)});
+</script>
+</body>
+</html>
