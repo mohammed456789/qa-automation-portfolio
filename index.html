@@ -98,8 +98,38 @@ h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--acc
 .job li{margin-bottom:4px}
 
 /* skills */
-.skill{margin-bottom:18px}
-.skill h4{font-size:14px;color:var(--accent2);margin-bottom:8px;font-family:ui-monospace,Consolas,monospace}
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));
+  gap:16px;
+  margin-top:24px;
+}
+.skill-card{
+  min-width:0;
+  padding:20px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+}
+.skill-card h3{display:flex;align-items:center;gap:12px;font-size:17px;line-height:1.3}
+.skill-icon{
+  display:grid;
+  place-items:center;
+  flex:0 0 40px;
+  height:40px;
+  border-radius:10px;
+  color:var(--accent);
+  background:color-mix(in srgb,var(--accent) 12%,var(--bg2));
+}
+.skill-icon svg{
+  width:22px;
+  height:22px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
 
 /* bug reports */
 .bug{border:1px dashed var(--line);border-radius:var(--radius);padding:24px;background:var(--bg2)}
@@ -324,14 +354,36 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);text-a
 <section id="skills" style="background:var(--bg2)">
   <div class="wrap">
     <h2>Skills</h2>
-    <p class="sub">The toolkit.</p>
-    <div class="skill reveal"><h4>test_automation</h4><div class="tags"><span>Playwright (JS/TS)</span><span>Selenium WebDriver</span><span>Cypress</span><span>Cucumber BDD</span><span>TestNG</span><span>JUnit</span><span>RSpec</span><span>TestComplete</span><span>Page Object Model</span><span>Data-driven testing</span><span>Cross-browser</span><span>Mobile emulation</span><span>Applitools</span></div></div>
-    <div class="skill reveal"><h4>api_and_performance</h4><div class="tags"><span>Rest Assured</span><span>Postman</span><span>SoapUI</span><span>Playwright API</span><span>REST validation</span><span>Integration testing</span><span>JMeter</span></div></div>
-    <div class="skill reveal"><h4>database</h4><div class="tags"><span>SQL</span><span>Oracle SQL</span><span>MySQL</span><span>Joins and aggregations</span><span>Data integrity validation</span></div></div>
-    <div class="skill reveal"><h4>ci_cd_cloud_tools</h4><div class="tags"><span>Jenkins</span><span>GitHub Actions</span><span>Maven</span><span>Gradle</span><span>Git</span><span>Bitbucket</span><span>JIRA</span><span>ServiceNow</span><span>Azure</span><span>AWS</span><span>GCP</span><span>Pivotal Cloud Foundry</span></div></div>
-    <div class="skill reveal"><h4>languages</h4><div class="tags"><span>Java 8</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Ruby</span><span>SQL</span><span>HTML</span><span>CSS</span></div></div>
-    <div class="skill reveal"><h4>qa_process</h4><div class="tags"><span>Test strategy</span><span>Test planning</span><span>Test data management</span><span>Defect triage</span><span>QA metrics</span><span>Regression suites</span><span>SaaS product testing</span><span>Agile / Scrum</span><span>Mentoring</span></div></div>
-    <div class="skill reveal"><h4>ai_assisted</h4><div class="tags"><span>Generative AI testing</span><span>Agentic AI testing</span><span>AI-assisted engineering</span><span>GitHub Copilot</span><span>Claude</span><span>ChatGPT</span><span>Cursor</span><span>Playwright MCP</span><span>Prompt engineering</span></div></div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M3 8h18m-12 5 2 2 4-4"/></svg></span>Test automation</h3>
+        <div class="tags"><span>Playwright (JS/TS)</span><span>Selenium WebDriver</span><span>Cypress</span><span>Cucumber BDD</span><span>TestNG</span><span>JUnit</span><span>RSpec</span><span>TestComplete</span><span>Page Object Model</span><span>Data-driven testing</span><span>Cross-browser</span><span>Mobile emulation</span><span>Applitools</span></div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 17a8 8 0 1 1 14 0H5Zm7-4 4-4m-4 4v1"/></svg></span>API and performance</h3>
+        <div class="tags"><span>Rest Assured</span><span>Postman</span><span>SoapUI</span><span>Playwright API</span><span>REST validation</span><span>Integration testing</span><span>JMeter</span></div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg></span>Database testing</h3>
+        <div class="tags"><span>SQL</span><span>Oracle SQL</span><span>MySQL</span><span>Joins and aggregations</span><span>Data integrity validation</span></div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 18h11a4 4 0 0 0 0-8 6 6 0 0 0-11-1 4.5 4.5 0 0 0 0 9Z"/></svg></span>CI/CD and cloud tools</h3>
+        <div class="tags"><span>Jenkins</span><span>GitHub Actions</span><span>Maven</span><span>Gradle</span><span>Git</span><span>Bitbucket</span><span>JIRA</span><span>ServiceNow</span><span>Azure</span><span>AWS</span><span>GCP</span><span>Pivotal Cloud Foundry</span></div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18"/></svg></span>Programming languages</h3>
+        <div class="tags"><span>Java 8</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Ruby</span><span>SQL</span><span>HTML</span><span>CSS</span></div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="m8 11 2 2 5-5m-7 9h8"/></svg></span>QA practices</h3>
+        <div class="tags"><span>Test strategy</span><span>Test planning</span><span>Test data management</span><span>Defect triage</span><span>QA metrics</span><span>Regression suites</span><span>SaaS product testing</span><span>Agile / Scrum</span><span>Mentoring</span></div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/></svg></span>AI testing and tooling</h3>
+        <div class="tags"><span>Generative AI testing</span><span>Agentic AI testing</span><span>AI-assisted engineering</span><span>GitHub Copilot</span><span>Claude</span><span>ChatGPT</span><span>Cursor</span><span>Playwright MCP</span><span>Prompt engineering</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
